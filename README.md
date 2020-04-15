@@ -1,4 +1,5 @@
 # ISA-CA1-Intelligent-News-express
 
-New York Times - Tagui \n
+New York Times - Tagui
+
 BBC News - API
