@@ -10,7 +10,6 @@ Today Online - Tagui
 
 --
 
-
 Library:
 pip install apscheduler==2.1.2
 pip install sqlite3
@@ -34,3 +33,6 @@ CREATE TABLE "news" (
 	FOREIGN KEY("site_id") REFERENCES "site"("id")
 );
 ```
+
+![](images/cloud_word_output_2.png?raw=true)
+
