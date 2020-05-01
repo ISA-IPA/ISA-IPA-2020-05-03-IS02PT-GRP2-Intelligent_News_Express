@@ -10,4 +10,4 @@ Today Online - Tagui
 
 --
 
-![](images/table 1-1.png?raw=true)
+![](images/cloud_word_output_2.png?raw=true)
