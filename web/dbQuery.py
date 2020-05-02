@@ -28,52 +28,26 @@ def getSiteByName(name):
 def getAllNews():
     conn = create_connection()
     cur = conn.cursor()
-    cur.execute("SELECT * FROM news")
+    cur.execute("SELECT * FROM news where latest=1")
     data = cur.fetchall()
     conn.close()
+    resultList = buildNewsList(data)
 
-    columnNames = ("News ID","Site ID","Create Date", "Title","URL","Summary")
-    df = pd.DataFrame(data, columns=columnNames)
-    tableList = buildNewsTable(data)
-    columns = [
-        {
-            "field": "news_id", # which is the field's name of data key 
-            "title": "News ID", # display as the table header's name
-            "sortable": True,
-        },
-        {
-            "field": "site_id",
-            "title": "Site ID",
-            "sortable": True,
-        },
-        {
-            "field": "create_date",
-            "title": "Create Date",
-            "sortable": True,
-        },
-        {
-            "field": "title",
-            "title": "Title",
-            "sortable": True,
-        },
-        {
-            "field": "url",
-            "title": "URL",
-            "sortable": True,
-        },
-        {
-            "field": "summary",
-            "title": "Summary",
-            "sortable": True,
-        }
-    ]
+    return resultList
 
-    return tableList,columns
+def getNewsBySiteName(site_name):
+    conn = create_connection()
+    cur = conn.cursor()
+    cur.execute("select * from news where latest=1 and site_id in (select id from site where name =?)",(site_name,))
+    data = cur.fetchall()
+    conn.close()
+    resultList = buildNewsList(data)
 
+    return resultList
 
-def buildNewsTable(data):
+def buildNewsList(data):
     tableList =[]
     for row in data:
-        news = {"news_id": row[0],"site_id":row[1], "create_date":row[2], "title":row[3], "url":row[4], "summary": row[5]}
+        news = {"news_id": row[0],"site_id":row[1], "create_date":row[2], "title":row[3], "url":row[4], "summary": row[5],"img_url":row[6]}
         tableList.append(news)
     return tableList

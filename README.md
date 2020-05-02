@@ -13,6 +13,7 @@ Today Online - Tagui
 Library:
 pip install apscheduler==2.1.2
 pip install sqlite3
+pip install wordcloud
 
 
 SQL query

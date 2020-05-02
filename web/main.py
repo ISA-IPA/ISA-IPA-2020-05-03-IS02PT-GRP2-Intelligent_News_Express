@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import sqlite3
 import dbQuery
 
@@ -6,19 +6,13 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-	data, columns = dbQuery.getAllNews()
-	return render_template("index.html", data=data, columns=columns, len= len(data))
-	#return render_template("index.html", tables=[data.to_html(classes='data', header="true")])
-    
-@app.route("/about")
-def about():
-	return render_template("about.html")
+	data= dbQuery.getNewsBySiteName("StraitsTimes")
+	return render_template("index.html", data=data, len= len(data))
 
-@app.route("/db")
-def db():
-	data, columns = dbQuery.getAllNews()
-	return render_template("index.html", data=data, columns=columns)
-	#return render_template('db.html',  tables=[data.to_html(classes='data', header="true")])
+@app.route("/getNewsBySiteName/<site_name>")
+def getNewsBySiteName(site_name):
+	data = dbQuery.getNewsBySiteName(site_name)
+	return render_template("index.html", data=data, len= len(data))
     
 if __name__ == "__main__":
 	app.run(debug=True)
