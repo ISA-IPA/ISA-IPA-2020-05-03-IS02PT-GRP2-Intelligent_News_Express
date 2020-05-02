@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-	data= dbQuery.getNewsBySiteName("StraitsTimes")
+	data= dbQuery.getNewsBySiteName("BBC News")
 	return render_template("index.html", data=data, len= len(data))
 
 @app.route("/getNewsBySiteName/<site_name>")
