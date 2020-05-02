@@ -6,7 +6,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-	return render_template("index.html")
+	data, columns = dbQuery.getAllNews()
+	return render_template("index.html", data=data, columns=columns, len= len(data))
+	#return render_template("index.html", tables=[data.to_html(classes='data', header="true")])
     
 @app.route("/about")
 def about():
@@ -14,8 +16,9 @@ def about():
 
 @app.route("/db")
 def db():
-	data = dbQuery.getAllNews()
-	return render_template('db.html',  tables=[data.to_html(classes='data', header="true")])
+	data, columns = dbQuery.getAllNews()
+	return render_template("index.html", data=data, columns=columns)
+	#return render_template('db.html',  tables=[data.to_html(classes='data', header="true")])
     
 if __name__ == "__main__":
 	app.run(debug=True)

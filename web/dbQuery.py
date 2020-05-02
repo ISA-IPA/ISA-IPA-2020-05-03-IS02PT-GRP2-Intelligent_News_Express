@@ -34,6 +34,46 @@ def getAllNews():
 
     columnNames = ("News ID","Site ID","Create Date", "Title","URL","Summary")
     df = pd.DataFrame(data, columns=columnNames)
+    tableList = buildNewsTable(data)
+    columns = [
+        {
+            "field": "news_id", # which is the field's name of data key 
+            "title": "News ID", # display as the table header's name
+            "sortable": True,
+        },
+        {
+            "field": "site_id",
+            "title": "Site ID",
+            "sortable": True,
+        },
+        {
+            "field": "create_date",
+            "title": "Create Date",
+            "sortable": True,
+        },
+        {
+            "field": "title",
+            "title": "Title",
+            "sortable": True,
+        },
+        {
+            "field": "url",
+            "title": "URL",
+            "sortable": True,
+        },
+        {
+            "field": "summary",
+            "title": "Summary",
+            "sortable": True,
+        }
+    ]
 
-    return df
+    return tableList,columns
 
+
+def buildNewsTable(data):
+    tableList =[]
+    for row in data:
+        news = {"news_id": row[0],"site_id":row[1], "create_date":row[2], "title":row[3], "url":row[4], "summary": row[5]}
+        tableList.append(news)
+    return tableList
