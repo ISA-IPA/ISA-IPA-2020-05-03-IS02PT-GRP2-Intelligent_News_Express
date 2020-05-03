@@ -87,7 +87,7 @@
           {%for i in range(0, len)%} 
             <div class="col-lg-4 col-md-6 mb-4">
               <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="{{data[i]['img_url']}}" alt="{{data[i]['url']}}"></a>
+                <a href="{{data[i]['url']}}"><img class="card-img-top" src="{{data[i]['img_url']}}" alt="{{data[i]['title']}}"></a>
                 <div class="card-body">
                   <h4 class="card-title">
                     <a href="{{data[i]['url']}}">{{data[i]['title']}}</a>

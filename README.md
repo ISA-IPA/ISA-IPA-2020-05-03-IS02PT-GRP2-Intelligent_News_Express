@@ -39,7 +39,7 @@ Today Online - Tagui
 
 > download python 2.7
 
-> pip install apscheduler==2.1.2 sqlite3 wordcloud tagui flask request pandas
+> pip install apscheduler==2.1.2 sqlite3 wordcloud tagui flask request pandas pyteaser pprint pillow
 
 > open terminal and cd to project root folder
 
@@ -55,7 +55,7 @@ Program will run once a day to fetch news from website and update database
 
 > $ python main.py
 
-> **Go to URL using web browser** http://0.0.0.0:5000 or http://127.0.0.1:5000
+> **Go to URL using web browser** http://localhost:5000 or http://127.0.0.1:5000
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
