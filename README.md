@@ -21,7 +21,7 @@ The system is developed with the implementation of tools: TagUI, API, SQLite, Lo
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
 | Dongbin | A0018636A | Business case generation and discussion, RPA, Python(TagUI,Pyteaser&wordcloud), Report&Slides, Prensatation| e0384187@nus.edu.sg |
-| Sun Hang | A0105742M | Business case generation and discussion, RPA, Web Application, DB Management| e0384337@u.nus.edu |
+| Sun Hang | A0105742M | Business case generation and discussion, RPA, Web Application, DB Management, Demo| e0384337@u.nus.edu |
 ---
 
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
