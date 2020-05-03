@@ -26,32 +26,33 @@ def run():
 		df.iloc[i-1, 3] = summaries
 		df.iloc[i-1, 4] = Img_link[i]
 
+	df = util.fixImgLink(df, "https://cf-templates-fghyux9ggb7t-ap-southeast-1.s3-ap-southeast-1.amazonaws.com/bbc.png")
 	df = util.fixSummary(df)
 
 	util.updateNews(conn, site_id, df)
 
 # BBC top news
 def NewsFromBBC(site_url):    
-    # BBC news api
-    main_url = site_url
+	# BBC news api
+	main_url = site_url
  
-    # fetching data in json format
-    open_bbc_page = requests.get(main_url).json()
+	# fetching data in json format
+	open_bbc_page = requests.get(main_url).json()
  
-    # getting all articles in a string article
-    article = open_bbc_page["articles"]
+	# getting all articles in a string article
+	article = open_bbc_page["articles"]
  
-    # empty list which will 
-    # contain all trending news
-    results = []
-    url = []
-    Img_link = []
-     
-    for ar in article:
-        results.append(ar["title"])
-        url.append(ar["url"])
-        Img_link.append(ar["urlToImage"])
-         
-        number_BBC = len(results)
-    
-    return results, url, number_BBC, Img_link
+	# empty list which will 
+	# contain all trending news
+	results = []
+	url = []
+	Img_link = []
+	 
+	for ar in article:
+		results.append(ar["title"])
+		url.append(ar["url"])
+		Img_link.append(ar["urlToImage"])
+		 
+		number_BBC = len(results)
+	
+	return results, url, number_BBC, Img_link

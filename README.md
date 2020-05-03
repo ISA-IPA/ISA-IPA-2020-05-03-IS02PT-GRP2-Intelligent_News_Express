@@ -1,7 +1,7 @@
 ## SECTION 1 : PROJECT TITLE
 ## Intelligent News express
 
-![](images/cloud_word_output_2.png?raw=true)
+![](resources/title.png)
 
 ---
 

@@ -18,8 +18,9 @@ def run():
 	t.url(site_url)
 	t.wait(10)
 	df = catchContent()
+	df = util.fixImgLink(df,"https://cf-templates-fghyux9ggb7t-ap-southeast-1.s3-ap-southeast-1.amazonaws.com/StraitsTime.png")
 	df = util.fixSummary(df)
-	t.wait(60)
+	t.wait(20)
 	t.close()
 
 	util.updateNews(conn, site_id, df)

@@ -16,12 +16,12 @@ def run():
 	        item = item.encode("utf-8")
 	        text = text + item + " "
 
-	wc = WordCloud(background_color="white")
+	wc = WordCloud(background_color="white",stopwords=STOPWORDS)
 	wc.generate(text)
-	wc.to_file('cloud_word_summary_1.png')
-	custom_mask = np.array(Image.open("cloud.png"))
+	wc.to_file('./web/static/cloud_word_summary_1.png')
+	custom_mask = np.array(Image.open("./web/static/cloud.png"))
 	wc = WordCloud(background_color="white", mask=custom_mask, contour_width=3, contour_color='white')
 
 	wc.generate(text)
-	wc.to_file('cloud_word_summary_2.png')
+	wc.to_file('./web/static/cloud_word_summary_2.png')
 	print("Image generated")

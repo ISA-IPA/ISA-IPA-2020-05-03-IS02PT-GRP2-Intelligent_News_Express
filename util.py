@@ -70,3 +70,9 @@ def fixSummary(df):
     for i in range(0, df.shape[0]):
         df['Summary'][i] = remove_str(df['Summary'][i], "u'")
     return df
+
+def fixImgLink(df, imgLink):
+    for i in range(0, df.shape[0]):
+        if not str(df['Img_URL'][i]).startswith('http'):
+            df['Img_URL'][i] = imgLink
+    return df
