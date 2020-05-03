@@ -62,7 +62,7 @@ Program will run once a day to fetch news from website and update database
 
 `Refer to project report at Github Folder: ProjectReport`
 
-[report](./ProjectReport/CA1-Report-Intelligent%20News%20express.pdf)
+[Intelligent News Express (CA1 report)](./ProjectReport/CA1-Report-Intelligent%20News%20express.pdf)
 
 ---
 ## SECTION 7 : MISCELLANEOUS
@@ -76,10 +76,10 @@ Program will run once a day to fetch news from website and update database
 * Web page template
 
 ### folder ipynb
-* Development ipynb files. Development Only
+* Development ipynb files.
 * You could copy the ipynb files to project root folder and run them 
 
-## folder diagram
+### folder diagram
 * System & database design diagram in png and drawio format
 
 ---
