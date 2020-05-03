@@ -26,7 +26,7 @@ The system is developed with the implementation of tools: TagUI, API, SQLite, Lo
 
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
-[![Placeholder](http://img.youtube.com/vi/-AiYLUjP6o8/0.jpg)](https://youtu.be/-AiYLUjP6o8 "Placeholder")
+[![Video](https://img.youtube.com/vi/2_MevgvhjSk/0.jpg)](https://youtu.be/2_MevgvhjSk)
 
 ---
 
@@ -61,22 +61,7 @@ Program will run once a day to fetch news from website and update database
 
 `Refer to project report at Github Folder: ProjectReport`
 
-**Recommended Sections for Project Report / Paper:**
-- Executive Summary / Paper Abstract
-- Sponsor Company Introduction (if applicable)
-- Business Problem Background
-- Market Research
-- Project Objectives & Success Measurements
-- Project Solution (To detail domain modelling & system design.)
-- Project Implementation (To detail system development & testing approach.)
-- Project Performance & Validation (To prove project objectives are met.)
-- Project Conclusions: Findings & Recommendation
-- Appendix of report: Project Proposal
-- Appendix of report: Mapped System Functionalities against knowledge, techniques and skills of modular courses: MR, RS, CGS
-- Appendix of report: Installation and User Guide
-- Appendix of report: 1-2 pages individual project report per project member, including: Individual reflection of project journey: (1) personal contribution to group project (2) what learnt is most useful for you (3) how you can apply the knowledge and skills in other situations or your workplaces
-- Appendix of report: List of Abbreviations (if applicable)
-- Appendix of report: References (if applicable)
+[Intelligent News Express (CA1 report)](./ProjectReport/CA1-Report-Intelligent%20News%20express.pdf)
 
 ---
 ## SECTION 7 : MISCELLANEOUS
@@ -88,5 +73,12 @@ Program will run once a day to fetch news from website and update database
 
 ### startbootstrap-shop-homepage-gh-pages.zip
 * Web page template
+
+### folder ipynb
+* Development ipynb files.
+* You could copy the ipynb files to project root folder and run them 
+
+### folder diagram
+* System & database design diagram in png and drawio format
 
 ---
