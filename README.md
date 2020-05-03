@@ -38,7 +38,7 @@ The system is developed with the implementation of tools: TagUI, API, SQLite, Lo
 
 > download python 2.7
 
-> pip install apscheduler==2.1.2 sqlite3 wordcloud tagui flask request pandas pyteaser pprint pillow
+> pip install apscheduler==2.1.2 wordcloud tagui flask requests pandas pyteaser pprint pillow
 
 > open terminal and cd to project root folder
 
@@ -55,6 +55,8 @@ Program will run once a day to fetch news from website and update database
 > $ python main.py
 
 > **Go to URL using web browser** http://localhost:5000 or http://127.0.0.1:5000
+
+> You could also check this website deployed on [aws](http://18.139.180.254/)
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
