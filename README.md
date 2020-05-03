@@ -7,13 +7,12 @@
 
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
 
-New York Times - Tagui
+Due to information explosion nowadays, people need to read more and more news to get a brief and comprehensive understanding of the current trend and the most controversial happenings in the world. Based on a survey from the global web index, which shows that people spend 1.35 hours every day reading news on average. More than half of them read news online. It is challenge to get the most valuable information in a fast and effective way.
 
-BBC News - API
+Our proposed solution is to provide a one-stop site for the customers to read comprehensive news intelligent summary content in short time (less than 10 minutes per day). The system will use an intelligent process or software agent to assist in news acquiring and summarization. In the product plan, we will support customized options for different tastes of the customers in the future.
 
-StraitTimes - Tagui
+The system is developed with the implementation of tools: TagUI, API, SQLite, Local AI, Flask and AWS. Both TagUI and Api are used for news content acquisition. One reason to use both methods is to compare the performance for them. Most of our news content is retrieved with the TagUI method in essence. The content is stored in the database with SQLite. Based on this data, local AI will do the Natural language processing to get the summary for each article. The web service is built with the Flask, and using AWS.
 
-Today Online - Tagui
 
 ---
 
@@ -21,8 +20,8 @@ Today Online - Tagui
 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
-| Dongbin | A1234567A | RPA Report Prensatation Slides| A1234567A@nus.edu.sg |
-| Sun Hang | A0105742M | RPA, Web Application, DB Management| e0384337@u.nus.edu |
+| Dongbin | A0018636A | Business case generation and discussion, RPA, Python(TagUI,Pyteaser&wordcloud), Report&Slides, Prensatation| e0384187@nus.edu.sg |
+| Sun Hang | A0105742M | Business case generation and discussion, RPA, Web Application, DB Management| e0384337@u.nus.edu |
 ---
 
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
