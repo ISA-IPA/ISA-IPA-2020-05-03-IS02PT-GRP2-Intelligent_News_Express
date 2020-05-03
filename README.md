@@ -56,7 +56,7 @@ Program will run once a day to fetch news from website and update database
 
 > **Go to URL using web browser** http://localhost:5000 or http://127.0.0.1:5000
 
-> You could also check this website deployed on [aws](http://8.139.180.254)
+> You could also check this website deployed on [aws](http://18.139.180.254/)
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
