@@ -38,6 +38,8 @@ The system is developed with the implementation of tools: TagUI, API, SQLite, Lo
 
 > download python 2.7
 
+> download [OpenJDK 8](https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html) 
+
 > pip install apscheduler==2.1.2 wordcloud tagui flask requests pandas pyteaser pprint pillow
 
 > open terminal and cd to project root folder
